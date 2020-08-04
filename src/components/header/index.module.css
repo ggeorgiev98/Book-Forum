@@ -1,0 +1,22 @@
+.header {   
+    width: 100%;
+    height: 120px;
+    background-color: coral;
+}
+
+.navBar { 
+    position: relative;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin: 40px;
+    background-color: brown;
+    border-style: double;
+    border-radius: 5px;
+    border-color: khaki;
+}
+
+.link {
+    display: block;
+}
+
