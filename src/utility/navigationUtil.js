@@ -1,8 +1,12 @@
 const navigationUtility = () => {
     const navContent = [
         {
-            content: 'Post a book',
-            link: '/post'
+            content: 'Contact us',
+            link: '/contact'
+        },
+        {
+            content: 'About us',
+            link: '/about'
         },
         {
             content: 'Sign up',
@@ -13,9 +17,9 @@ const navigationUtility = () => {
             link: '/login'
         },
         {
-            content: 'Books',
+            content: 'Home',
             link: '/'
-        },
+        }
     ];
 
     return navContent;

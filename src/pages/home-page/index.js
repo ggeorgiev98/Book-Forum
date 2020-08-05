@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/header';
+import Menu from '../../components/menu';
 
 class HomePage extends Component {
     constructor(props) {
@@ -9,7 +10,11 @@ class HomePage extends Component {
 
     render() {
         return (
-            <Header />
+            <div>
+                <Header />
+                <Menu />
+
+            </div>
         );
     };
 };

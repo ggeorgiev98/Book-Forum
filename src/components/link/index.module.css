@@ -1,3 +1,4 @@
+/* Navigation */
 .nav-box {
     display: block;
     width: auto;
@@ -11,8 +12,37 @@
 .nav-box:hover {
     background: rgba(218, 255, 116, 0.74);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .nav-link {
     font-family: 'Architects Daughter', cursive;
 }
+
+/* Menu */
+.menu-box {
+    height: 3.5%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.menu-box:hover {
+    background-color: gold;
+    cursor: pointer;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: bold;
+}
+
+.menu-box:first-child{
+    margin-top: 20%;
+}
+
+.menu-link {
+    font-family: 'Architects Daughter', cursive;
+    display: inline-block;
+}
+
