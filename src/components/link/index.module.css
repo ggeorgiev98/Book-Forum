@@ -20,20 +20,28 @@
 }
 
 /* Menu */
-.menu-box {
+/*.menu-box {
     height: 3.5%;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 15%;
     text-align: center;
-}
+}*/
+.menu-box {
 
+    height: 3.5%;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+    
 .menu-box:hover {
     background-color: gold;
     cursor: pointer;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     font-weight: bold;
 }
 

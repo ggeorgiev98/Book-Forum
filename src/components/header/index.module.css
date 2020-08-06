@@ -3,6 +3,7 @@
     height: 100px;
     background-color: rgb(243, 180, 7);
     position: sticky;
+    float: right;
 }
 
 
