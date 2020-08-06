@@ -12,12 +12,12 @@ class HomePage extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Header />
                 <Menu />
                 <Content />
                 <Footer />
-            </div>
+            </React.Fragment>
         );
     };
 };

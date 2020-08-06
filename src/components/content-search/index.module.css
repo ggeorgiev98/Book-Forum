@@ -1,0 +1,26 @@
+.container {
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+    height: 7vh;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.box {
+    margin: 12px;
+}
+
+.select {
+    font-family: 'Architects Daughter', cursive;
+    background-color: lightskyblue;
+    border-radius: 30px;
+}
+
+.input {
+    border-radius: 30px;
+    border: none;
+    border-bottom: 2px solid burlywood
+}
+
