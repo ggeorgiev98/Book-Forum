@@ -26,7 +26,7 @@ class ContentSearch extends Component{
                         <option label='Drama'/>
                         <option label='Criminal'/>
                         <option label='History'/>
-                        <option label='Historical fiction'/>
+                        <option label='Historical novel'/>
                     </select>
                 </div>
                 <div className={styles.box}>

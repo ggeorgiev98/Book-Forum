@@ -1,0 +1,11 @@
+.book {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: lemonchiffon;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+}

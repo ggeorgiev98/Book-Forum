@@ -6,7 +6,6 @@ import Content from '../../components/content';
 class HomePage extends Component {
     constructor(props) {
         super(props);
-
     };
 
     render() {
