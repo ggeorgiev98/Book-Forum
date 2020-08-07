@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../../components/header';
-import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import Content from '../../components/content';
 
@@ -14,7 +13,6 @@ class HomePage extends Component {
         return (
             <React.Fragment>
                 <Header />
-                <Menu />
                 <Content />
                 <Footer />
             </React.Fragment>
