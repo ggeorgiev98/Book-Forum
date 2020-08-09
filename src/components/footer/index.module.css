@@ -1,17 +1,8 @@
 .footer{
-    background-color: rgb(218, 255, 116);
-    display: inline-block;
-    bottom: 0;
-    height: 120px;
-    margin-top: 0;
-    text-align: center;
+    background-color: rgb(235, 180, 148);
+    position: absolute;
+    height: 4%;
+    bottom: 0%;
     width: 100%;
-}
-
-.quote {
-    font-family: 'Merienda One', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: oblique;
-    padding-top: 10px;
+    border-top: 2px solid rgb(173, 99, 3)
 }
