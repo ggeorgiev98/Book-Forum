@@ -25,3 +25,5 @@ const quoteSchema = new mongoose.Schema ({
         ref: 'Book'
     }
 });
+
+module.exports = new mongoose.model("Quote" ,quoteSchema )

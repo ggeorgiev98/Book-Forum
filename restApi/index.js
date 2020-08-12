@@ -7,7 +7,7 @@ const { connectDatabase } = require('./config/database.js')
 connectDatabase();
 
 require('./config/express.js')(app);
-
-app.listen(process.env.port, () => {
+require('./config/routes.js')(app);
+app.listen(config.port, () => {
     console.log(`Rest api listening on port: ${config.port}`)
 });
