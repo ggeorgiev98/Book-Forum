@@ -24,13 +24,27 @@ module.exports = {
         });
     },
     put: (req, res, err) => {
+        const id = req.params.id;
 
+        const {
+            title,
+            description,
+            imgUrl,
+            author,
+            genre
+        } = req.body;
+
+        models.Book.updateOne({_id: id}, {title,description,imgUrl,author,genre})
+            .then(() => {
+                res.status(200).send("Book edited. Thank you!")
+            })
+            .catch(err => res.status(400).send(err));
     },
     delete: (req, res, err) => {
-        const { id } = req.params.id
+        const id = req.params.id;
 
-        models.Book.findByIdAndDelete(id)
-        .then(res.send(true))
-        .catch(res.send(err))
+        models.Book.deleteOne({ _id : id })
+        .then((deletedBook) => res.send(deletedBook))
+        .catch((err) => res.send(err))
     }
 };

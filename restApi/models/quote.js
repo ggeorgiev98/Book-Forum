@@ -4,7 +4,7 @@ const quoteSchema = new mongoose.Schema ({
     content: {
         type: String,
         required: true,
-        minlength: 30,
+        minlength: 10,
         maxlength: 1000,
         match: [/[A-Za-z0-9.,!?\s]+/g, "The content is invalid."]
     },
@@ -14,10 +14,6 @@ const quoteSchema = new mongoose.Schema ({
         minlength: 3,
         maxlength: 20,
         match: [/[A-Za-z0-9\s]+/g]
-    },
-    genre: {
-        type: String,
-        required: true
     },
     fromBook: {
         required: true,

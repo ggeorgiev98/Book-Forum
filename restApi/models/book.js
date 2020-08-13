@@ -15,7 +15,7 @@ const bookSchema = new mongoose.Schema ({
         match: [/[A-Za-z0-9.,!?\s]+/g, 'Book description is not valid!']
     },
     imgUrl: {
-        type: String
+        type: String,
     },
     author: {
         type: String,
@@ -31,6 +31,3 @@ const bookSchema = new mongoose.Schema ({
 });
 
 module.exports = new mongoose.model('Book', bookSchema);
-//!!!!!!!
-//
-//add required igmUrl later!!!!!
