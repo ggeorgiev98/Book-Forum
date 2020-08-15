@@ -1,48 +1,53 @@
-import React, { Component} from 'react';
-
+import React, { useRef } from 'react';
+import { SubmitButton } from '../buttons/submit-button.js';
+import { genreSearch, paramSearch } from '../../utility/content-searchUtil.js';
 import styles from './index.module.css';
 
-class ContentSearch extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            genre: '',
-            author: '',
-            seacrhField: ''
-        };
+const ContentSearch = () => {
+    const genreInput = useRef(null)
+    const paramInput = useRef(null)
+    const textInput = useRef(null);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(`Genre: ${genreInput.current.value}`)
+        console.log(`Param: ${paramInput.current.value}`)
+        console.log(`Text: ${textInput.current.value}`)
     };
 
-    render() {
-
-        return (
-            <form className={styles.container}>
-                <div className={styles.box}>
-                    <label htmlFor='genre'>Choose a genre: </label>
-                    <select id='genre' className={styles.select}>
-                        <option label="" />
-                        <option label='Fantasy'/>
-                        <option label='Fantastic'/>
-                        <option label='Novel'/>
-                        <option label='Drama'/>
-                        <option label='Criminal'/>
-                        <option label='History'/>
-                        <option label='Historical novel'/>
-                    </select>
-                </div>
-                <div className={styles.box}>
-                    <label htmlFor='param'>Search by: </label>
-                    <select id='param' className={styles.select}>
-                        <option label='Title'/>
-                        <option label='Author'/>
-                        <option label='Year of publishing'/>
-                    </select>
-                </div>
-                <div className={styles.box}>
-                    <input className={styles.input} type='text' value="Search..." /> - <input type="button" value="Search"/>
-                </div>
-            </form>
-        );
-    };
+    return (
+        <form onSubmit={handleSubmit} className={styles.container}>
+            <div className={styles.box}>
+                <label htmlFor='genre'>Choose a genre: </label>
+                <select ref={genreInput} className={styles.select}>
+                    {
+                        genreSearch.map((x, index) => {
+                            return (
+                                <option value={x.value} label={x.label} key={index} />
+                            )
+                        })
+                    }
+                </select>
+            </div>
+            <div className={styles.box}>
+                <label htmlFor='param'>Search by: </label>
+                <select ref={paramInput} className={styles.select}>
+                    {
+                        paramSearch.map((x, index) => {
+                            return (
+                                <option value={x.value} label={x.label} key={index} />
+                            )
+                        })
+                    }
+                </select>
+            </div>
+            <div className={styles.box}>
+                <input className={styles.input} type='text' ref={textInput} /> - <SubmitButton />
+            </div>
+        </form>
+    );
 };
+
 
 export default ContentSearch;
