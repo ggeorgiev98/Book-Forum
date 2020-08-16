@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import styles from './index.module.css';
-import ContentSearch from '../content-search';
-import Books from '../books';
 
-const Content = () => {
-    return (
-        <div className={styles.content}>
-            <ContentSearch />
-            <Books />
-        </div>
-    );
+class Content extends Component {
+    constructor(props) {
+        super(props);
+
+    }
+    render() {
+
+        return (
+            <div className={styles.content}>
+                {this.props.children}
+            </div>
+        );
+    }
 };
 
 export default Content;

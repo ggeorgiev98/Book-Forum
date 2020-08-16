@@ -24,6 +24,8 @@
 
 .nav-link {
     font-family: 'Architects Daughter', cursive;
+    text-decoration: none;
+    color: black;
 }
 
 /* Menu */

@@ -1,5 +1,16 @@
-.submit {
+.search {
     border-radius: 30px;
     border: none;
-    border-bottom: 2px solid burlywood
+    border-bottom: 2px solid burlywood;
+    font-family: 'Architects Daughter', cursive;
 }
+
+.login {
+    border: none;
+    background-color: #3a73bd;
+    width: 100%;
+    height: 50px;
+    font-size: xx-large;
+    font-family: 'Architects Daughter', cursive;
+}
+

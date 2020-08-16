@@ -1,0 +1,18 @@
+.search {
+    width: 70%;
+    border-radius: 30px;
+    border: none;
+    border-bottom: 2px solid burlywood
+}
+
+.credential {
+    height: 20px;
+    border: none;
+    align-self: stretch;
+    background-color: #36485f;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+
+

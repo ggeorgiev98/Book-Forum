@@ -15,7 +15,8 @@ const navigationUtility = () => {
         {
             content: 'Login',
             link: '/login'
-        },{
+        },
+        {
             content: 'Profile',
             link: '/profile'
         },

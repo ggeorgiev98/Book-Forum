@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { SubmitButton } from '../buttons/submit-button.js';
 import { genreSearch, paramSearch } from '../../utility/content-searchUtil.js';
 import styles from './index.module.css';
+import Input from '../input/index.js';
 
 const ContentSearch = () => {
     const genreInput = useRef(null)
@@ -43,7 +44,7 @@ const ContentSearch = () => {
                 </select>
             </div>
             <div className={styles.box}>
-                <input className={styles.input} type='text' ref={textInput} /> - <SubmitButton />
+                <Input type='text' typeOfInput="search" ref={textInput} /> - <SubmitButton title="Search"/>
             </div>
         </form>
     );

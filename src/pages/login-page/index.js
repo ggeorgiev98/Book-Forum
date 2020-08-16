@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import LoginDialog from '../../components/login-dialog';
 import Content from '../../components/content';
-import ContentSearch from '../../components/content-search';
-import Books from '../../components/books'
-class HomePage extends Component {
+
+class LoginPage extends Component {
     constructor(props) {
         super(props);
     };
@@ -13,9 +13,8 @@ class HomePage extends Component {
         return (
             <React.Fragment>
                 <Header />
-                <Content>
-                    <ContentSearch />
-                    <Books />
+                <Content >
+                    <LoginDialog />
                 </Content>
                 <Footer />
             </React.Fragment>
@@ -23,4 +22,4 @@ class HomePage extends Component {
     };
 };
 
-export default HomePage;
+export default LoginPage;

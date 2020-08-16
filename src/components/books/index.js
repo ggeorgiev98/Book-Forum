@@ -6,7 +6,7 @@ import styles from './index.module.css';
 
 const Books = () => {
 
-    const books = utilBooks();
+    //const books = utilBooks();
 
     return (
         <div className={styles.container}>
