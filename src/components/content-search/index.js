@@ -1,20 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { SubmitButton } from '../buttons/submit-button.js';
 import { genreSearch, paramSearch } from '../../utility/content-searchUtil.js';
-import styles from './index.module.css';
 import Input from '../input/index.js';
 
+import styles from './index.module.css';
+
 const ContentSearch = () => {
-    const genreInput = useRef(null)
-    const paramInput = useRef(null)
-    const textInput = useRef(null);
+    const genreInput = useRef();
+    const paramInput = useRef();
+    const [text, setText] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         console.log(`Genre: ${genreInput.current.value}`)
         console.log(`Param: ${paramInput.current.value}`)
-        console.log(`Text: ${textInput.current.value}`)
+        console.log(text);
     };
 
     return (
@@ -44,7 +45,7 @@ const ContentSearch = () => {
                 </select>
             </div>
             <div className={styles.box}>
-                <Input type='text' typeOfInput="search" ref={textInput} /> - <SubmitButton title="Search"/>
+                <Input key='input' type='text' typeOfInput="search" value={text} onChange={e => setText(e.target.value)} /> - <SubmitButton title="Search" typeOfButton="search" />
             </div>
         </form>
     );

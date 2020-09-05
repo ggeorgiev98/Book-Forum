@@ -4,7 +4,6 @@ import navigationUtility from '../../utility/navigationUtil'
 import styles from './index.module.css';
 
 const Header = () => {
-    const type = 'nav';
     const linksContent = navigationUtility();
 
 

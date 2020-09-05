@@ -9,3 +9,11 @@
     font-size: large;
     font-family: 'Architects Daughter', cursive;
 }
+
+.invalidCredentials {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+}

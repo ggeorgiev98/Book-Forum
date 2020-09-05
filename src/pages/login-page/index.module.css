@@ -1,0 +1,30 @@
+.container {
+    width: 96%;
+    margin-left: 2%;
+    background-color: #36485f;
+    height: 90vh;
+    text-align: center;
+}
+
+.loginContainer {
+    float: right;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+.registerContainer {
+    float: left;
+    margin-right: 15%;
+    margin-top: 10%;
+
+}
+
+.inputBox {
+    margin: 10%;
+    padding: 10px;
+}
+
+.form {
+    margin-top: 10px;
+}
+
